@@ -1,0 +1,39 @@
+name: Quality Check
+
+on:
+  pull_request:
+    branches:
+      - '**'
+  push:
+    branches:
+      - master
+
+jobs:
+  checks:
+    name: "Pass code along quality checks"
+    strategy:
+      matrix:
+        version:
+          - '8.1'
+          - '8.2'
+          - '8.3'
+        os:
+          - ubuntu-latest
+          - windows-latest
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.version }}
+          extensions: fileinfo
+      - name: Build package
+        run: composer install --no-interaction --no-progress
+      - name: Code Style Linter
+        run: ./vendor/bin/phpcs --standard=phpcs.xml --colors -sp
+      - name: PHPStan
+        run: ./vendor/bin/phpstan analyse --no-progress --configuration=phpstan.neon
+      - name: PHPUnit
+        run: ./vendor/bin/phpunit tests

@@ -1,0 +1,81 @@
+{
+    "name": "plumthedev/laravel-cloudwatch-logger",
+    "description": "Laravel Cloudwatch Logger is a Laravel package providing seamless integration with AWS CloudWatch for logging.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "integration",
+        "aws",
+        "cloudwatch",
+        "logger",
+        "php"
+    ],
+    "homepage": "https://github.com/plumthedev/laravel-cloudwatch-logger",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kacper Pruszyński (plumthedev)",
+            "email": "kacper.pruszynski99@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.1",
+        "plumthedev/php-cloudwatch-logger": "^1",
+        "laravel/framework": "^6 | ^7 | ^8 | ^9 | ^10"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^10",
+        "mockery/mockery": "^1.6",
+        "slevomat/coding-standard": "^8.14",
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-mockery": "^1.1",
+        "orchestra/testbench": "^8.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "CloudwatchLogger\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\CloudwatchLogger\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CloudwatchLogger\\CloudwatchLoggerServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@clear",
+            "@prepare"
+        ],
+        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
+        "build": "@php vendor/bin/testbench workbench:build --ansi",
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "@build",
+            "@php vendor/bin/testbench serve"
+        ],
+        "lint": [
+            "@php vendor/bin/phpstan analyse"
+        ],
+        "test": [
+            "@php vendor/bin/phpunit"
+        ]
+    }
+}

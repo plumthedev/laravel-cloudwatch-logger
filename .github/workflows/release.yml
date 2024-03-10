@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  workflow_run:
+    workflows: ["Quality Check"]
+    types: [completed]
+    branches:
+      - 'master'
+
+
+jobs:
+  release:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    name: "Release new package version"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Publish Tag
+        id: semantic
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          extra_plugins: |
+            @semantic-release/commit-analyzer
+            @semantic-release/release-notes-generator
+            @semantic-release/changelog
+            @semantic-release/git
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Publish release
+        if: steps.semantic.outputs.new_release_published == 'true'
+        uses: ncipollo/release-action@v1
+        with:
+          name: ${{ steps.semantic.outputs.new_release_version }}
+          body: ${{ steps.semantic.outputs.new_release_notes }}
+          tag: ${{ steps.semantic.outputs.new_release_git_tag }}

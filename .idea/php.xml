@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="codingStandard" value="Custom" />
+    <option name="customRuleset" value="$PROJECT_DIR$/phpcs.xml" />
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpCodeSniffer">
+    <phpcs_settings>
+      <PhpCSConfiguration beautifier_path="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/bin/phpcbf" tool_path="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/bin/phpcs" />
+    </phpcs_settings>
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/phpnexus/cwh" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/composer" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/phpstan/phpstan-mockery" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/aws/aws-sdk-php" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/aws/aws-crt-php" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/slevomat/coding-standard" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/dealerdirect/phpcodesniffer-composer-installer" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/ralouphie/getallheaders" />
+    </include_path>
+  </component>
+  <component name="PhpInterpreters">
+    <interpreters>
+      <interpreter id="64f3803c-b62a-4ed9-be85-1e7364e93f5a" name="php-cloudwatch-logger:develop" home="docker://DATA" auto="false" debugger_id="php.debugger.XDebug">
+        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_IMAGE_NAME="php-cloudwatch-logger:develop" DOCKER_REMOTE_PROJECT_PATH="/opt/project" />
+      </interpreter>
+    </interpreters>
+  </component>
+  <component name="PhpInterpretersPhpInfoCache">
+    <phpInfoCache>
+      <interpreter name="php-cloudwatch-logger:develop">
+        <phpinfo binary_type="PHP" php_cgi="/usr/local/bin/php-cgi" php_cli="/usr/local/bin/php" path_separator=":" version="8.1.27">
+          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-sodium.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini</additional_php_ini>
+          <configuration_file />
+          <configuration_options>
+            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
+          </configuration_options>
+          <debuggers>
+            <debugger_info debugger="xdebug" debugger_version="3.3.1">
+              <debug_extensions />
+            </debugger_info>
+          </debuggers>
+          <loaded_extensions>
+            <extension name="Core" />
+            <extension name="PDO" />
+            <extension name="Phar" />
+            <extension name="Reflection" />
+            <extension name="SPL" />
+            <extension name="SimpleXML" />
+            <extension name="ctype" />
+            <extension name="curl" />
+            <extension name="date" />
+            <extension name="dom" />
+            <extension name="fileinfo" />
+            <extension name="filter" />
+            <extension name="ftp" />
+            <extension name="hash" />
+            <extension name="iconv" />
+            <extension name="json" />
+            <extension name="libxml" />
+            <extension name="mbstring" />
+            <extension name="mysqlnd" />
+            <extension name="openssl" />
+            <extension name="pcre" />
+            <extension name="pdo_sqlite" />
+            <extension name="posix" />
+            <extension name="readline" />
+            <extension name="session" />
+            <extension name="sodium" />
+            <extension name="sqlite3" />
+            <extension name="standard" />
+            <extension name="tokenizer" />
+            <extension name="xdebug" />
+            <extension name="xml" />
+            <extension name="xmlreader" />
+            <extension name="xmlwriter" />
+            <extension name="zlib" />
+          </loaded_extensions>
+        </phpinfo>
+      </interpreter>
+    </phpInfoCache>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.1">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+  <component name="PhpStan">
+    <PhpStan_settings>
+      <PhpStanConfiguration tool_path="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/bin/phpstan" />
+    </PhpStan_settings>
+  </component>
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/../php-cloudwatch-logger/phpunit.xml" custom_loader_path="$PROJECT_DIR$/../php-cloudwatch-logger/vendor/autoload.php" use_configuration_file="true" />
+    </phpunit_settings>
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+</project>
